@@ -17,9 +17,9 @@ func (s *stack) pop() interface{} {
 	if len(s.data) == 0 {
 		return nil
 	}
-	data := s.data[len(s.data)-1]
+	item := s.data[len(s.data)-1]
 	s.data = s.data[0 : len(s.data)-1]
-	return data
+	return item
 }
 
 func main() {
